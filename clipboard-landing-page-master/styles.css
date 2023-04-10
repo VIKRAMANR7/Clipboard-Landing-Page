@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+:root {
+  --bg-grayishblue: hsl(201, 11%, 66%);
+  --bg-darkgrayishblue: hsl(210, 10%, 33%);
+  --bg-cyan: hsl(171, 66%, 44%);
+  --bg-lightblue: hsl(233, 100%, 69%);
+  --bg-white: hsl(0, 0%, 100%);
+}
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+input,
+button {
+  font: inherit;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a,
+button {
+  cursor: pointer;
+  border: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--bg-darkgrayishblue);
+  font-weight: 600;
+}
+p {
+  color: var(--bg-grayishblue);
+  font-weight: 600;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.container {
+  background: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.main-contents {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-logo img {
+  width: 90px;
+}
+h1 {
+  padding: 4rem 0 2rem 0;
+  font-size: 4.1rem;
+}
+.main-para {
+  max-width: 630px;
+  padding: 0 0 3rem 0;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  text-align: center;
+}
+.download button {
+  width: 190px;
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  color: var(--bg-white);
+  border-radius: 2.5rem;
+  font-weight: 600;
+}
+.desktop {
+  background-color: var(--bg-cyan);
+  margin-right: 1.5rem;
+}
+.mac {
+  background-color: var(--bg-lightblue);
+}
+.download span button:nth-child(1) {
+  margin-left: 1.5rem;
+}
+.side-heading {
+  margin: 10rem 0 0 0;
+}
+h2 {
+  font-size: 3.4rem;
+}
+.clipboard {
+  max-width: 700px;
+  margin: 2rem auto 7rem auto;
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+  text-align: center;
+}
+.two-col-flex {
+  display: flex;
+}
+.second-col {
+  margin: 4rem 0 0 6rem;
+}
+.second-col h4 {
+  font-size: 2.4rem;
+}
+.second-col p {
+  max-width: 350px;
+  margin: 1.5rem 0 5rem 0;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.body-content {
+  margin-top: 10rem;
+  text-align: center;
+}
+.three-col {
+  margin: 0 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.three-col img {
+  margin: 0 auto;
+  text-align: center;
+}
+.three-col > div {
+  max-width: 400px;
+  text-align: center;
+}
+.three-col h3 {
+  margin: 3rem 0;
+  font-size: 2.7rem;
+}
+.three-col p {
+  padding: 0 4rem;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+.logo-gallery {
+  margin: 15rem 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content {
+  text-align: center;
+}
+.footer-content .download {
+  margin-bottom: 15rem;
+}
+.navbar {
+  padding: 3rem 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(244, 246, 248);
+}
+.navbar img {
+  max-width: 50px;
+}
+.links {
+  display: flex;
+}
+.navs ul {
+  margin-left: 10rem;
+}
+.navs ul div {
+  margin-right: 10rem;
+  display: inline-block;
+}
+.navs ul div:nth-child(3) {
+  vertical-align: top;
+}
+.navs ul div li:nth-child(odd) {
+  margin-bottom: 2rem;
+}
+.nav-items li a {
+  font-size: 1.6rem;
+  color: var(--bg-darkgrayishblue);
+}
+.share-icons svg {
+  margin: 0 0 0 1.5rem;
+  cursor: pointer;
+}
+.logo-icon {
+  fill: #4c545c;
+}
+/* Hover states */
+.nav-items li a:hover,
+.nav-items li a:focus {
+  color: var(--bg-cyan);
+}
+.logo-icon:hover,
+.logo-icon:focus {
+  fill: var(--bg-cyan);
+}
+.download button:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    background: url("./images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    max-width: 375px;
+  }
+  .main-contents {
+    padding-top: 4rem;
+  }
+  .main-logo img {
+    max-width: 60px;
+  }
+  h1 {
+    max-width: 320px;
+    padding: 4rem 0;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .main-para {
+    max-width: 320px;
+    padding: 0 0 3rem 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .desktop,
+  .mac {
+    margin: 0 auto 2rem auto;
+    display: block;
+  }
+  .side-heading {
+    margin: 10rem 0 0 0;
+  }
+  h2 {
+    max-width: 300px;
+    text-align: center;
+    font-size: 2.4rem;
+  }
+  .clipboard {
+    max-width: 320px;
+    margin: 2rem 0 7rem 0;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .two-col-flex {
+    flex-direction: column;
+  }
+  .computer-img img {
+    max-width: 345px;
+    margin: 0 auto;
+  }
+  .second-col {
+    margin: 5rem 0 0 0;
+    text-align: center;
+  }
+  .second-col h4 {
+    font-size: 2rem;
+  }
+  .second-col p {
+    max-width: 320px;
+    margin: 1.5rem auto 3rem auto;
+    padding-right: 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .devices img {
+    max-width: 345px;
+    margin: 10rem auto 0 auto;
+  }
+  .three-col {
+    margin: 0 0 0 0;
+    flex-direction: column;
+  }
+  .three-col > div {
+    max-width: 375px;
+  }
+  .three-col h3 {
+    margin: 2rem 0 3rem 0;
+    font-size: 2.1rem;
+  }
+  .three-col p {
+    max-width: 300px;
+    padding: 0 0 3rem 0;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+  .logo-gallery {
+    margin: 5rem 0;
+    flex-direction: column;
+  }
+  .logo-gallery > div {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .logo-gallery img {
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h2 {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .clipboard {
+    max-width: 315px;
+    margin: 2rem auto 3rem auto;
+  }
+  .footer-content .download {
+    margin-bottom: 5rem;
+  }
+  .navbar {
+    padding: 3rem 0;
+    flex-direction: column;
+  }
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navs {
+    text-align: center;
+  }
+  .bottom-logo {
+    margin-bottom: 3rem;
+  }
+  .navs ul {
+    margin-left: 0;
+  }
+  .navs ul div {
+    margin-right: 0;
+    display: block;
+  }
+  .navs ul div li {
+    margin-bottom: 2rem;
+  }
+  .navs ul div li:nth-child(odd) {
+    margin-bottom: 2rem;
+  }
+  .share-icons {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .share-icons svg {
+    margin: 0 3rem 0 0;
+  }
+  .share-icons svg:nth-child(3) {
+    margin-right: 0;
+  }
+}
